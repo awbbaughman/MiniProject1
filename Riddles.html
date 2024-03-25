@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Baughman">
+    <title>Middle Earth Mirth | Riddles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <nav>
+<h2><a href="Home.html">Home</a></h2> 
+<h2><a href="Lore.html">Lore</a></h2>
+<h2><a href="#">Riddles</a></h2>
+<h2><a href="Account.html">My Account</a></h2>
+
+    </nav>
+    <div class="div1">
+<h1>The Riddle Game</h1>
+<h2>Bilbo Baggins is stuck deep in the caves of the Misty Moutains. The only way out is to best Gollum in a game of riddles.</h2>
+<h3>Request a riddle and answer it correctly to gain progress. Answer correctly three times to win the One Ring!</h3>
+</div>
+    
+<section>
+   
+    <div class="flex-container">
+        <!-- column 1-->
+            <div class="flex-item">
+                    <img src="./images/gollum1.png">
+             </div>
+
+        <!-- column 2-->
+
+            <div class="flex-item">
+                    <div class="flex-item riddle-div" id="riddle-div">
+                    </div>
+                        <div class="flex-item">
+                         <button class="button" id="next-riddle-button" onclick="newRiddle()">Load a New Riddle >></button>
+                        </div>
+                        <div class="flex-item">
+                            <button class="button" id="reveal-answer-button" onclick="revealAnswer()">Reveal the Answer >></button>
+                           </div>
+                           <div class="flex-item">
+                            <button class="button" id="proceed-button" onclick="proceed()">I got it right >></button>
+                           </div>
+                    <!-- Fetch riddle API here-->
+                    
+
+                    <div class="flex-item">
+                        <div class="flex-item-small">
+                            <img src="./images/theRing.png" class="ring" id="ring">
+                        </div><!-- Add Ring progression javascript here-->
+                        <div class="circles">
+                            <div class="circle1 p-numbers">
+                             <p>1</p>
+                            </div> 
+                            <div class="circle2 p-numbers">
+                                <p>2</p>
+                            </div>
+                            <div class="circle3 p-numbers">
+                             <p>3</p>
+                            </div> 
+                        </div>
+                    </div>
+
+        </div>
+        <!-- column 3-->
+            <div class="flex-item">
+                  <img src="./images/bilbo1.png">
+            </div>
+    </div>
+    </section>
+
+    <script src="index.js"> </script>
+</body>
+<footer>The board is set, and the pieces are&nbsp;moving.</footer>
+</html>
